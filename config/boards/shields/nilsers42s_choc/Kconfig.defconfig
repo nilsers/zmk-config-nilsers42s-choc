@@ -1,0 +1,14 @@
+if SHIELD_NILSERS42S_CHOC_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "nilsers42s-choc"
+
+endif
+
+
+if SHIELD_NILSERS42S_CHOC_LEFT || SHIELD_NILSERS42S_CHOC_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
