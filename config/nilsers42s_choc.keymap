@@ -52,9 +52,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1      &kp N2       &kp N3    &kp N4      &kp N5       &kp N6                    &kp N7        &kp N8    &kp N9                     &kp N0     &kp BSPC
-&trans     &trans      &trans       &trans    &trans      &trans       &kp LEFT                  &kp DOWN      &kp UP    &kp RIGHT                  &kp F2     &kp LG(F12)
-&kp LSHFT  &sys_reset  &bootloader  &trans    &kp LG(F3)  &kp F3       &kp LG(LS(LEFT_BRACKET))  &kp LG(DOWN)  &none     &kp LS(LG(RIGHT_BRACKET))  &kp LC(T)  &kp LC(LA(D))
+&kp TAB    &kp N1      &kp N2       &kp N3    &kp N4      &kp N5       &kp N6                    &kp N7        &kp N8         &kp N9                     &kp N0     &kp BSPC
+&trans     &trans      &trans       &trans    &trans      &trans       &kp LEFT                  &kp DOWN      &kp UP         &kp RIGHT                  &kp F2     &kp LG(F12)
+&kp LSHFT  &sys_reset  &bootloader  &trans    &kp LG(F3)  &kp F3       &kp LG(LS(LEFT_BRACKET))  &kp LG(DOWN)  &kp LA(LG(B))  &kp LS(LG(RIGHT_BRACKET))  &kp LC(T)  &kp LC(LA(D))
                                     &kp LGUI  &trans      &kp SPACE    &kp RET                   &trans        &kp RALT
             >;
         };
@@ -67,10 +67,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL   &kp AT  &kp HASH    &kp DLLR  &kp PRCNT            &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR     &kp BSPC
-&kp LCTRL  &kp TILDE  &trans  &m_scrshot  &kp F2    &kp LG(F12)          &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH     &kp GRAVE
-&kp LSHFT  &trans     &trans  &trans      &trans    &kp LA(LC(SPACE))    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &bootloader  &sys_reset
-                              &kp LGUI    &trans    &kp SPACE            &kp RET    &trans     &kp RALT
+&kp TAB    &kp EXCL   &kp AT      &kp HASH    &kp DLLR    &kp PRCNT            &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR     &kp BSPC
+&kp LCTRL  &kp TILDE  &kp LG(F6)  &kp LS(F6)  &kp F2      &kp LG(F12)          &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH     &kp GRAVE
+&kp LSHFT  &trans     &trans      &trans      &m_scrshot  &kp LA(LC(SPACE))    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &bootloader  &sys_reset
+                                  &kp LGUI    &trans      &kp SPACE            &kp RET    &trans     &kp RALT
             >;
         };
 
