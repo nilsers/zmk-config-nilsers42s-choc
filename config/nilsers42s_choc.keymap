@@ -82,6 +82,27 @@
             bindings = <&kp LS(F6)>;
             label = "IDEA_RENAM";
         };
+
+        mac_lock: mac_lock {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(Q))>;
+            label = "MAC_LOCK";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        bt_clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <0 12>;
+        };
+
+        kp_eq_plus {
+            bindings = <&kp EQUAL>;
+            key-positions = <10 11>;
+        };
     };
 
     keymap {
@@ -134,7 +155,7 @@
 
         bt {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_PRV  &bt BT_NXT            &trans           &trans      &trans       &kp C_MUTE
+&mac_lock   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_PRV  &bt BT_NXT            &trans           &trans      &trans       &kp C_MUTE
 &trans      &trans        &trans        &trans        &trans        &trans          &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP  &kp C_NEXT  &trans       &trans
 &sys_reset  &bootloader   &trans        &trans        &trans        &trans          &kp K_PREV  &kp LS(K_PLAY_PAUSE)  &kp K_MUTE       &kp K_NEXT  &bootloader  &sys_reset
                                         &trans        &trans        &trans          &trans      &trans                &trans
