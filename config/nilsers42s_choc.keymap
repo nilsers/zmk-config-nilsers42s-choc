@@ -96,7 +96,7 @@
 
         bt_clear {
             bindings = <&bt BT_CLR>;
-            key-positions = <0 12>;
+            key-positions = <0 12 24>;
         };
 
         kp_eq_plus {
@@ -136,10 +136,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1  &kp N2      &kp N3    &kp N4      &kp N5       &kp N6                    &kp N7        &kp N8         &kp N9                     &kp N0         &trans
-&trans  &trans  &m_scrshot  &trans    &trans      &trans       &kp LEFT                  &kp DOWN      &kp UP         &kp RIGHT                  &kp PAGE_DOWN  &kp PAGE_UP
-&trans  &trans  &trans      &trans    &kp LG(F3)  &kp F3       &kp LG(LS(LEFT_BRACKET))  &kp LG(DOWN)  &kp LA(LG(B))  &kp LS(LG(RIGHT_BRACKET))  &kp LC(T)      &kp LC(LA(D))
-                            &kp LGUI  &trans      &kp SPACE    &kp RET                   &trans        &kp RALT
+&trans  &kp N1  &kp N2      &kp N3    &kp N4      &kp N5       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0         &trans
+&trans  &trans  &m_scrshot  &trans    &trans      &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp PAGE_DOWN  &kp PAGE_UP
+&trans  &trans  &trans      &trans    &kp LG(F3)  &kp F3       &none     &none     &none     &none      &none          &trans
+                            &kp LGUI  &trans      &kp SPACE    &kp RET   &trans    &kp RALT
             >;
         };
 
@@ -151,10 +151,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&ht TILDE GRAVE  &kp EXCL     &kp AT           &kp HASH     &kp DLLR      &kp PRCNT       &kp CARET       &kp AMPS              &kp ASTRK              &kp LPAR  &kp RPAR                     &ht UNDER MINUS
-&trans           &idea_renam  &idea_structure  &idea_debug  &idea_format  &idea_search    &ht PLUS EQUAL  &kp LG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &none     &ht LEFT_BRACE LEFT_BRACKET  &ht RIGHT_BRACE RIGHT_BRACKET
-&kp LSHIFT       &none        &none            &idea_n_iss  &idea_term    &idea_build     &none           &none                 &none                  &none     &none                        &ht PIPE BACKSLASH
-                                               &trans       &trans        &trans          &trans          &trans                &trans
+&ht TILDE GRAVE  &kp EXCL     &kp AT           &kp HASH     &kp DLLR      &kp PRCNT       &kp CARET      &kp AMPS              &kp ASTRK              &kp LPAR  &kp RPAR                     &ht UNDER MINUS
+&trans           &idea_renam  &idea_structure  &idea_debug  &idea_format  &idea_search    &kp LC(LA(H))  &kp LG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &none     &ht LEFT_BRACE LEFT_BRACKET  &ht RIGHT_BRACE RIGHT_BRACKET
+&kp LSHIFT       &none        &ht F3 LG(F3)    &idea_n_iss  &idea_term    &idea_build     &none          &none                 &none                  &none     &none                        &ht PIPE BACKSLASH
+                                               &trans       &trans        &trans          &trans         &trans                &trans
             >;
         };
 
